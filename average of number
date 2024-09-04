@@ -1,0 +1,18 @@
+#include<iostream>
+int main()
+{
+	int n,i;
+	std::cout<<"enter the numbers:";
+	std::cin>>n;
+	double sum=0;
+	double num,average;
+	for(i=0;i<n;i++)
+	{
+		std::cout << "Enter number " << i + 1 << ": ";
+		std::cin>>num;
+		sum=sum+num;
+	}
+	double averge=sum/n;
+	std::cout<<"average:"<<average<<std::endl;
+	return 0;
+}
