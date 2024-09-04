@@ -1,0 +1,20 @@
+#include <iostream>
+int main() 
+{
+    int number,sum=0,rev=0,a;
+    std::cout << "Enter a number: ";
+    std::cin >> number;
+    sum=number;
+    while(number>0)
+    {
+    	a=number%10;
+    	rev=rev*10+a;
+    	number=number/10;
+	}
+    if (sum==rev) {
+        std::cout << " is a palindrome." << std::endl;
+    } else {
+        std::cout << " is not a palindrome." << std::endl;
+    }
+    return 0;
+}
